@@ -11,14 +11,17 @@ public class FibonacciNumber {
     }
 
     static int fibonacci(int n) {
-        int f_prev = 0;
-        int f_current = 1;
+        if (n == 0) {
+            return 0;
+        }
+        int fPrev = 0;
+        int fCurrent = 1;
 
         for (int i = 2; i <= n; i++) {
-            f_current = f_prev + f_current;
-            f_prev = f_current - f_prev;
+            fCurrent = fPrev + fCurrent;
+            fPrev = fCurrent - fPrev;
         }
 
-        return f_current;
+        return fCurrent;
     }
 }
