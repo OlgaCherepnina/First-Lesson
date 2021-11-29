@@ -24,7 +24,7 @@ public class Animal {
         return name + " говорит " + voice;
     }
 
-    public void say() {
+    public void voice() {
         System.out.println(speech());
     }
 }
